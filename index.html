@@ -123,99 +123,138 @@
       padding:40px 16px 60px;
       color:#9b7c9b;
     }
+    /* animações */
+    .fade-in{
+      opacity:0;
+      transform:translateY(20px);
+      transition:opacity .9s ease, transform .9s ease;
+    }
+    .fade-in.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+    .ring{
+      position:relative;
+      animation:ringGlow 3s ease-in-out infinite;
+    }
+    @keyframes ringGlow{
+      0%{box-shadow:0 0 0 rgba(217,184,108,0.2)}
+      50%{box-shadow:0 0 25px rgba(217,184,108,0.45)}
+      100%{box-shadow:0 0 0 rgba(217,184,108,0.2)}
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Feliz aniversário, Vegas <span class="heart">♥</span></h1>
-    <p>Este site é um presente feito com carinho por <strong>Aleksei</strong> — para celebrar você, a sua luz, e tudo o que construímos juntos.</p>
+    <button id="musicBtn" aria-label="Tocar música" style="position:fixed;top:20px;right:20px;z-index:999;background:#fff;border:none;border-radius:999px;padding:10px 14px;box-shadow:0 6px 18px rgba(0,0,0,.15);font-size:14px;cursor:pointer">🔊 Música</button>
+    <h1>Feliz aniversário, meu amor <span class="heart">♥</span></h1>
+    <p>Criei esse site para te presentear e registrar todo o amor que sinto por você, princesa.</p>
   </header>  <main class="wrap"><section class="card">
   <h2>Sobre você</h2>
   <p>
-    <strong>Beatrice Vegas Winslow</strong> — mas o mundo inteiro te conhece simplesmente como <em>Vegas</em>.
-    Desde o primeiro instante, foi impossível não perceber o quanto você é especial.
-    Há algo em você que acalma e, ao mesmo tempo, acelera o coração.
+    <strong>Beatrice Vegas Winslow.</strong> Esse é o nome que faz meu coração acelerar, que desde o primeiro instante, foi impossível não ficar encantado pela forma como você age e se expressa. Há algo em você que me acalma, mas ao mesmo tempo, me domina e me deixa eletrizado.
   </p>
   <p>
-    Seus <strong>olhos brilhantes</strong> carregam histórias e promessas; o <strong>cabelo castanho</strong> emoldura um sorriso que parece feito para aquecer dias difíceis;
-    e há uma delicadeza no seu jeito que transforma o comum em extraordinário.
-    A sua <strong>boca macia</strong>… essa ele confessa: é o lugar favorito para voltar.
+    Seus <strong>olhos brilhantes</strong> me fascinam cada vez que os encontro, como se eu pudesse ver tudo por eles; o <strong>seu sorriso</strong> tão delicado e gentil é o que eu mais amo, poder ser a razão dele me deixa infinitamente feliz. Seu jeito delicado, seu carinho pela Miya, sua voz, seu carinho, seu abraço e seu aconchego me fez ficar cada dia mais apaixonado por você. E a sua <strong>boca</strong> tão macia, me faz não querer mais descolar os lábios dos seus.
   </p>
   <div class="divider"></div>
   <p>
-    Foi assim, aos poucos, que nos aproximamos — em conversas que ficavam longas demais,
-    em silêncios que nunca foram vazios, e na certeza silenciosa de que ficar era sempre a melhor escolha.
+    Desde nossos primeiros momentos, conversando naquela madrugada enquanto eu perdia miseravelmente os jogos e afundava cada vez mais nossa dupla, eu já sentia algo diferente no peito, uma sensação boa que me fez desejar estar cada vez mais próximo de você, te conquistar e tornar minha, o que agradeço às divindades todos os dias por ter conseguido. Foi assim, nas madrugadas, nas conversas aleatórias, fofocas, confissões e muitas risadas, que me apaixonei perdidamente por tudo em você.
   </p>
 </section>
 
 <section class="card">
   <h2>Nós</h2>
-  <p>Alguns momentos que guardamos com carinho. (As fotos serão colocadas aqui 💕)</p>
+  <p>Momentos ao seu lado. 🩷</p>
   <div class="grid">
-    <div class="photo"><span>Foto fofa #1</span></div>
-    <div class="photo"><span>Foto fofa #2</span></div>
-    <div class="photo"><span>Foto fofa #3</span></div>
-    <div class="photo"><span>Foto fofa #4</span></div>
+    <div class="photo fade-in"><img src="fotos/nos-01.jpg" alt="Beijo de Aleksei e Vegas" /></div>
+    <div class="photo fade-in"><img src="fotos/nos-02.jpg" alt="Abraço íntimo de Aleksei e Vegas" /></div>
+    <div class="photo fade-in"><img src="fotos/nos-03.jpg" alt="Vegas com a Miya" /></div>
+    <div class="photo fade-in"><img src="fotos/nos-04.jpg" alt="Aleksei, Vegas e Miya caminhando juntos" /></div>
   </div>
 </section>
 
 <section class="card">
-  <h2>Feliz aniversário</h2>
+  <h2>Parabéns, gatinha</h2>
   <p>
-    Que este novo ano venha com leveza, risadas fáceis e sonhos possíveis.
-    Que você se sinta amada todos os dias — porque é exatamente isso que você é.
+    Te desejo toda felicidade do mundo. Que possamos comemorar juntos por muitos e muitos anos, e que você sempre possa ter um dia repleto de alegrias, ao lado de todos que ama.
   </p>
   <div class="note">
     <p>
-      <strong>Miya</strong> também quis deixar um recadinho:
+      A <strong>Miya</strong> também quis deixar um recadinho:
       <br><br>
-      “Parabéns, Vegas! Eu fiz um desenho pra você 💖”
+      “O papai disse que você é uma princesa, mas eu acho que é fada. Feliz aniversário, titia. É da Miya.”
     </p>
   </div>
   <div class="divider"></div>
   <div class="grid">
-    <div class="photo"><span>Desenho da Miya</span></div>
+    <div class="photo fade-in"><img src="fotos/desenho-miya.jpg" alt="Desenho da Miya para Vegas" /></div>
   </div>
 </section>
 
 <section class="card">
   <h2>Presentes</h2>
-  <p>Algumas pequenas coisas escolhidas pensando em você.</p>
+  <p>Algumas coisas que escolhi pensando em você.</p>
   <div class="gifts">
     <div class="gift">
-      <div class="photo"><span>Presente #1</span></div>
-      <h4>Um mimo especial</h4>
-      <p>Porque você merece.</p>
+      <div class="photo fade-in"><img src="fotos/presente-urso.jpg" alt="Urso de pelúcia azul" /></div>
+      <h4>Para abraçar quando der saudade</h4>
+      <p>*ele tem o meu perfume.</p>
     </div>
     <div class="gift">
-      <div class="photo"><span>Presente #2</span></div>
-      <h4>Algo que lembra nós</h4>
-      <p>Do jeitinho que a gente é.</p>
+      <div class="photo fade-in"><img src="fotos/presente-combinando.jpg" alt="Camisetas combinando" /></div>
+      <h4>Para combinarmos ainda mais</h4>
+      <p>*já estou usando o meu.</p>
     </div>
     <div class="gift">
-      <div class="photo"><span>Presente #3</span></div>
-      <h4>Para usar quando quiser</h4>
-      <p>E pensar em mim.</p>
+      <div class="photo fade-in"><img src="fotos/presente-joias.jpg" alt="Joias Pandora" /></div>
+      <h4>Para realçar mais a sua beleza</h4>
+      <p>Miya disse que ficaria lindo em você.</p>
     </div>
   </div>
 </section>
 
-<section class="card ring">
+<section class="card ring fade-in">
   <h2>Um presente um pouco mais especial</h2>
   <p>
     Este não é um pedido oficial.
     <br><br>
-    É apenas a vontade sincera de te ver usando algo que simboliza o quanto você já é importante.
-    Eu precisava te dar essa aliança agora — porque a ideia de você com ela no dedo já mora em mim há tempos.
+    Mas é a manifestação clara do meu maior desejo: ver você usando uma aliança que simboliza todo o amor, orgulho, carinho e admiração que sinto por você de forma tão pura. Espero que goste do modelo, amor.
   </p>
   <div class="divider"></div>
   <div class="grid">
-    <div class="photo"><span>Aliança na caixinha ✨</span></div>
+    <div class="photo fade-in"><img src="fotos/alianca-caixinha.jpg" alt="Aliança na caixinha" /></div>
   </div>
 </section>
 
   </main>  <footer>
-    <p>Com amor, <strong>Aleksei</strong>.</p>
-  </footer>
-</body>
+    <p>Com todo o meu amor, <strong>Aleksei Dmitriev Pavlovich</strong>.</p>
+  </footer>  <audio id="bgMusic" loop>
+    <source src="musica/musica.mp3" type="audio/mpeg">
+  </audio>  <script>
+    const music = document.getElementById('bgMusic');
+    const musicBtn = document.getElementById('musicBtn');
+    let playing = false;
+
+    musicBtn.addEventListener('click', () => {
+      if(!playing){
+        music.play();
+        musicBtn.textContent = '🔇 Música';
+      } else {
+        music.pause();
+        musicBtn.textContent = '🔊 Música';
+      }
+      playing = !playing;
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script></body>
 </html>
